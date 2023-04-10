@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.ccxp {
+position: absolute;
+width: 1728px;
+height: 118px;
+left: 0px;
+top: 0px;
+
+background: #FFD900;
+}
+
+.ccxp_logo{
+    position: absolute;
+width: 202px;
+height: 63px;
+left: 58px;
+top: 27px;
+
+}
+.reviva{
+    position: absolute;
+width: 676px;
+height: 149px;
+left: 58px;
+top: 149px;
+}
+.inf{
+    position: absolute;
+width: 802px;
+height: 694px;
+left: 0px;
+top: 118px;
+
+background: #514988;
+}
+
+.text_inf {
+
+background: #514988;
+
+position: absolute;
+width: 678px;
+height: 350px;
+left: 64px;
+top: 370px;
+
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 400;
+font-size: 29px;
+line-height: 35px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+}
+.text_buy {
+    position: absolute;
+width: 800px;
+height: 33px;
+left: 89px;
+top: 827px;
+
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 27px;
+line-height: 33px;
+/* identical to box height */
+
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #F3C61F;
+}
+.butt {
+    position: absolute;
+width: 417px;
+height: 80px;
+left: 1094px;
+top: 937px;
+
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 42px;
+line-height: 51px;
+color: #FFFFFF;
+
+font-size: 42px;
+background: #514988;
+border-radius: 20px;
+position: absolute;
+width: 596px;
+height: 148px;
+left: 1004px;
+top: 903px;
+}
+.video{
+position: absolute;
+width: 900px;
+height: 510px;
+left: 817px;
+top: 284px;
+}
+
+.inf_video{
+    position: absolute;
+width: 741px;
+height: 36px;
+left: 842px;
+top: 230px;
+
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 30px;
+line-height: 36px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #E33881;
+}
+
+.img5{
+position: absolute;
+width: 204px;
+height: 204px;
+left: 81px;
+top: 875px;
+}
+
+.img4{
+position: absolute;
+width: 204px;
+height: 204px;
+left: 693px;
+top: 875px;
+}
+
+.img3{
+    position: absolute;
+width: 204px;
+height: 204px;
+left: 285px;
+top: 875px;
+}
+
+.img2{
+position: absolute;
+width: 204px;
+height: 204px;
+left: 489px;
+top: 875px;
+}
+
+.tempo{
+    position: absolute;
+width: 700px;
+height: 175px;
+left: 860px;
+top: 103px;
+
+font-family: 'Verdana';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 85px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #514988;
+}
+
+</style>
+</head>
+<body>
+
+<div class="ccxp"></div>
+
+<div class="ccxp_logo">
+    <img src="ccxp 2 1.png" alt="ccxp">
+</div>
+
+
+
+<div class="inf"></div>
+
+<div class="reviva">
+    <img src="inf.png" alt="reviva">
+</div>
+
+<div class="text_inf">
+  <p>Você consegue sentir? É aquela sensação de finalmente poder falar em voz alta: "estamos em casa". Sim, em dezembro de 2022, 
+    teremos a volta da CCXP física. Mas não será qualquer CCXP, vai ser a maior de todos os tempos. Prepare-se para visitar seus 
+    universos favoritos, explorar o Artists' Valley, se emocionar nos auditórios e encontrar aventuras épicas a cada passo pelos 
+    nossos corredores.</p>
+</div>
+
+<div class="inf_video">
+    <h4>A MAIOR CCXP DE TODOS OS TEMPOS</h4>
+</div>
+
+<div class="video">
+    <video loop width="880" height="510" autoplay>
+        <source src="Arlequina.mp4" type="video/mp4">
+      </video>
+</div>
+
+<div class="text_buy">
+  <h4>AINDA DÁ TEMPO DE GARANTIR O SEU, MAS CORRE!</h4>
+</div>
+
+<div class="img2">
+    <img src="image2.png" alt="img2">
+</div>
+
+<div class="img5">
+    <img src="image5.png" alt="img5">
+</div>
+
+<div class="img4">
+    <img src="image4.png" alt="img4">
+</div>
+
+<div class="img3">
+    <img src="image3.png" alt="img3">
+</div>
+
+
+
+<div class="tempo">
+    <p id="demo"></p>
+
+<script>
+// Set the date we're counting down to
+var countDownDate = new Date("Dec 1, 2023 15:37:25").getTime();
+
+// Update the count down every 1 second
+var x = setInterval(function() {
+
+  // Get today's date and time
+  var now = new Date().getTime();
+
+  // Find the distance between now and the count down date
+  var distance = countDownDate - now;
+
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  // Display the result in the element with id="demo"
+  document.getElementById("demo").innerHTML = days + "D " + hours + "H "
+  + minutes + "M " + seconds + "S ";
+
+  // If the count down is finished, write some text
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("demo").innerHTML = "EXPIRED";
+  }
+}, 1000);
+</script>
+</div>
+
+<button id="principal" class="butt" onmouseenter="entrar()" onmouseout="sair()"> GARANTA O SEU! </button>
+
+    <script>
+        function entrar(){
+            principal.style.background = 'yellow'
+            principal.style.color = 'black'
+        }
+
+        function sair(){
+            principal.style.background = '#514988'
+            principal.style.color = 'white'
+        }
+
+        
+    </script>
+</body>
+</html>
